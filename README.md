@@ -19,7 +19,16 @@ Creational patterns deal with object creation mechanisms, trying to create objec
   Specifies the kinds of objects to create using a prototypical instance, and creates new objects by copying this prototype.
 
 - **Singleton**  
-  Ensures that a class has only one instance, and provides a global point of access to that instance.
+  Ensures that a class has only one instance and provides a global point of access to that instance. This pattern is particularly useful when you want to control access to shared resources such as a configuration object, database connection, or logging class, ensuring that only one instance is created throughout the application's lifecycle.
+  1. **Key Characteristics of Singleton:**
+     - Private constructor: Prevents the creation of objects outside of the class.
+     - Static instance: Holds the single instance of the class.
+     - Public method: Provides access to the instance, creating it if it doesn’t exist.
+  2. **Types of Singleton Patterns:**
+     - Eager Initialization Singleton
+     - Lazy Initialization Singleton
+     - Double-Checked Locking Singleton
+     - Bill Pugh Singleton (using static inner class)
 
 ---
 
