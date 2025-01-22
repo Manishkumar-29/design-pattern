@@ -1,5 +1,9 @@
 package creationalPatterns.singleton.singletonLazy;
 
+/**
+ * A thread safe singleton is created so that singleton property is maintained even in multithreaded environment.
+ * To make a singleton class thread safe, getInstance() method is made synchronized so that multiple threads can’t access it simultaneously.
+ */
 public class ThreadSafeSingletonLazy {
     private static ThreadSafeSingletonLazy instance;
 
