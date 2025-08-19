@@ -87,6 +87,14 @@ Behavioral patterns deal with object interaction and responsibility delegation a
 
 - **Strategy**  
   Defines a family of algorithms, encapsulates each one, and makes them interchangeable. It allows the algorithm to be selected at runtime.
+  1. **Key Characteristics of Singleton:**
+     1. Encapsulation of algorithm
+     2. Flexibility & Extensibility
+     3. Runtime selection
+     4. Remove CComplex conditions
+     5. Easy testing and debugging
+  2. Definition
+     1. Strategy design pattern helps become it encapsulate algorithm into separate class, making the code module and reusable. It's flexible since i can add new strategies without caning existing code. it also allows runtime selection of algorithm, avoids bulky if/else logic and makes each strategy easy to test and debug independently.
 
 - **Template Method**  
   Defines the skeleton of an algorithm, deferring some steps to subclasses. It lets subclasses redefine certain steps of the algorithm.
