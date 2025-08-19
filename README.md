@@ -1,5 +1,3 @@
-# design-pattern
-
 # Design Patterns
 
 ## 1. Creational Patterns
@@ -97,8 +95,7 @@ Behavioral patterns deal with object interaction and responsibility delegation a
   Represents an operation to be performed on the elements of an object structure, allowing new operations to be added without changing the classes of the elements.
 
 ---
-
-## Design Pattern Structure
+Note: All the notes are referenced from GeeksForGeeks and JavaTPoint
 
 
 
