@@ -81,13 +81,20 @@ Behavioral patterns deal with object interaction and responsibility delegation a
 
 - **Observer**  
   Defines a one-to-many dependency between objects, so that when one object changes state, all dependent objects are notified and updated.
+    1. **Key Characteristics of Observer:**
+        1. Subject: The subject maintains a list of observers and notifies them of state changes.
+        2. Observer: The observer interface defines the contract for concrete observer classes.
+        3. ConcreteSubject: A class that implements the subject interface and manages the observers.
+        4. ConcreteObserver: A class that implements the observer interface and receives notifications.
+    2. Definition
+       1. The Observer pattern defines a one-to-many dependency where a subject notifies its observers directly whenever its state changes. This is usually in-memory and synchronous. For example, in Spring Boot, ApplicationEventPublisher with @EventListener is a classic Observer pattern
 
 - **State**  
   Allows an object to alter its behavior when its internal state changes, appearing as if the object has changed its class.
 
 - **Strategy**  
   Defines a family of algorithms, encapsulates each one, and makes them interchangeable. It allows the algorithm to be selected at runtime.
-  1. **Key Characteristics of Singleton:**
+  1. **Key Characteristics of Strategy:**
      1. Encapsulation of algorithm
      2. Flexibility & Extensibility
      3. Runtime selection
